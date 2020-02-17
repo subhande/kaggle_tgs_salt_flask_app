@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../static/css/main2.css?version=7"> -->
+    <link href="{{ url_for('static', filename='css/main.css', version='12052017') }}" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading1">Salt detection from seismic image</h1>
+    <div class="container">
+        <div class="wrapper">
+                <h3>Upload a seismic image</h3>
+            <div class="file-input">
+                <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                <button class="predict-btn" onclick="activeUpload()">Upload Image</button>
+                <img src="" id="image-preview" alt="">
+            </div>
+            <div class="button">
+                <button class="predict-btn" onclick="sendFile()">Predict</button>
+            </div>
+            <div class="result-img">
+                <p>Resultant Image:</p>
+                <img src="" id="image-result" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- <script src="../static/js/main2.js?version=7"></script> -->
+    <script src="{{ url_for('static', filename='js/main.js', version='12052017') }}" type="text/javascript"></script>    
+</body>
+</html>
