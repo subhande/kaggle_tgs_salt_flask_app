@@ -117,6 +117,12 @@ def upload():
     return jsonify({"status": "some error occured while sending file"}), 500
 
 
+# if __name__ == '__main__':
+#     app.run()
+
+# RUN FLASK APPLICATION
 if __name__ == '__main__':
-    app.run()
+
+    # RUNNNING FLASK APP
+    app.run(debug=True, host = '0.0.0.0', port=5000)
 
