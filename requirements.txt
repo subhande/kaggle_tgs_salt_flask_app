@@ -18,7 +18,7 @@ numpy==1.18.1
 opencv-python==4.2.0.32
 opt-einsum==3.2.0
 Pillow==7.0.0
-protobuf==3.11.3
+protobuf==3.18.3
 PyYAML==5.3
 scipy==1.4.1
 six==1.14.0
